@@ -69,7 +69,7 @@ plt.plot(rf_n_list, rf_results)
 plt.xlabel('n_estimators')
 plt.ylabel('Accuracy')
 plt.title('Estimation of optimal n_estimators for RF Classification')
-plt.show
+plt.show()
 
 # Final RF classification
 clf = RandomForestClassifier(
@@ -170,4 +170,5 @@ sns.heatmap(confusion_matrix(y_test, y_pred_svm), annot=True, fmt="d", cmap="Blu
 plt.title("SVM (RBF Kernel) - Confusion Matrix")
 plt.xlabel("Predicted Class")
 plt.ylabel("True Class")
+
 plt.show()
